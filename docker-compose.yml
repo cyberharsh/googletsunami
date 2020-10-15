@@ -1,0 +1,7 @@
+version: '2'
+services:
+ web:
+   image: jupyter/base-notebook
+   command: start-notebook.sh --NotebookApp.token=''
+   ports:
+    - "8001:8888"
